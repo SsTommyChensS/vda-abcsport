@@ -1,0 +1,33 @@
+.subheader {
+    font-family: var(--primary-font);
+    background-color: var(--black-color);
+}
+
+.subheader__showroom__title {
+    color: var(--primary-color);
+}
+  
+.subheader .navbar-nav .nav-item {
+    margin-right: 3rem; 
+}
+
+.subheader .navbar-nav .nav-item a {
+    color: var(--white-color);
+}
+
+.subheader .navbar-nav .nav-item a:hover {
+    color: var(--primary-color);
+}
+
+.subheader .navbar-nav .nav-item:last-child {
+    margin-right: 0; 
+}
+
+.subheader__showroom {
+    margin-left: auto; 
+    padding-left: 20px; 
+}
+
+.subheader .navbar-nav .dropdown-menu .dropdown-item {
+    color: var(--black-color);
+}

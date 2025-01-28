@@ -1,0 +1,165 @@
+.introduction {
+    position: relative;
+    background-image: url(/assets/images/introduction/introduction_background.png);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem; /* Add padding for spacing on smaller screens */
+}
+
+.introduction__left {
+    height: 100%;
+    max-width: 34vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; /* Consistent spacing between elements */
+}
+
+.introduction__robot {
+    width: 30vw;
+    position: absolute;
+    top: -8%; /* Position the robot slightly above the container */
+    right: 40vw;
+}
+
+.introduction__title {
+    font-size: 6rem;
+    line-height: 1.2; /* Adjust line height for readability */
+}
+
+.introduction__title__highlight {
+    color: var(--primary-color);
+}
+
+.introduction__show-more-btn {
+    width: 16.875rem;
+    height: 4.125rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.introduction__show-more-btn:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.slide-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.dot.active, .dot:hover {
+    background-color: var(--primary-color);
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+    width: 2.6rem; /* Length of the line */
+    height: 12px; /* Thickness of the line */
+    border-radius: 2rem; /* Rounded corners for the line */
+  }
+
+
+.introduction__title,
+.introduction__show-more-btn {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.introduction__title.hidden,
+.introduction__show-more-btn.hidden {
+    opacity: 0;
+}
+
+@media (max-width: 1024px) {
+    .introduction {
+        height: 70vh; /* Adjust section height for medium screens */
+    }
+
+    .introduction__left {
+        max-width: 60vw; /* Increase content width */
+    }
+
+    .introduction__robot {
+        display: none; 
+    }
+
+    .introduction__title {
+        font-size: 4rem; /* Scale down title font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        height: 80vh;
+        background-position: center center; /* Center the image */
+    }
+
+    .introduction__robot {
+        display: none; /* Ensure it stays visible */
+    }
+
+    .introduction__left {
+        max-width: 50%;
+        gap: 0.5rem; /* Reduce spacing */
+    }
+
+    .introduction__title {
+        font-size: 3rem;
+    }
+
+    .introduction__show-more-btn {
+        width: 14rem; /* Smaller button */
+        height: 3.5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .introduction {
+        height: 50vh;
+        padding: 0.5rem;
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .introduction__left {
+        max-width: 60%;
+    }
+
+    .introduction__robot {
+        display: none
+    }
+
+    .introduction__title {
+        font-size: 2rem;
+    }
+
+    .introduction__show-more-btn {
+        width: 12rem;
+        height: 3rem;
+        font-size: 0.9rem; /* Smaller text */
+        margin-top: 1rem;
+    }
+}

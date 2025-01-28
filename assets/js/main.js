@@ -1,0 +1,5 @@
+import './abcsport-chair.js'
+import './flashsale.js'
+import './news.js'
+import './products.js'
+import './testimonials.js'

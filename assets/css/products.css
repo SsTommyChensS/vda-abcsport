@@ -1,0 +1,110 @@
+.products {
+    font-family: var(--primary-font);
+    background-color: var(--white-color);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.products__header {
+    margin: auto;
+    text-align: center;
+}
+
+.products__header__title {
+    font-size: 4.75rem;
+    color: var(--font-primary-color);
+    font-weight: bolder;
+}
+
+.products__slider {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.products__items {
+    width: 100%; /* Set the width to 100% to take the full width of the browser */
+    overflow-x: hidden;
+}
+
+.products__items__product {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+    position: relative; /* Ensure the container is positioned relative for absolute positioning of the label */
+}
+
+.products__items__product:hover {
+    cursor: pointer;
+    box-shadow: -8px 0 16px rgba(0, 0, 0, 0.2), 8px 0 16px rgba(0, 0, 0, 0.2)
+  }
+
+.products__items__product img {
+    width: 100%;
+    object-fit: cover; 
+}
+
+.products__items__product__name {
+    position: absolute;
+    bottom: 14%;
+    left: 20px;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.products__items__product__quantity {
+    position: absolute;
+    bottom: 4%;
+    left: 20px;
+    width: 100%;
+    color: gray;
+    font-size: 1.313rem;
+}
+
+.products__see-all-button {
+    margin: auto;
+    margin-top: 4rem;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 3.75rem;
+    gap: 2rem;
+    border: none;
+}
+
+.products__see-all-button:hover {
+    scale: 1.05;
+}
+
+.products__canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+@media (max-width: 480px) {
+    .products {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .products__header__title {
+        font-size: 2.4rem;
+    }
+
+    .products__header__prenium {
+        width: 80px;
+    }
+
+    .products__see-all-button {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}

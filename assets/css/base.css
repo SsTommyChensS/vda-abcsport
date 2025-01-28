@@ -1,0 +1,13 @@
+:root {
+    /* Define your colors */
+    --primary-color: #FA5A0A;
+    --secondary-color: #FDF5F3;
+    --third-color: rgba(250, 90, 10, 0.6667);
+    --font-primary-color: rgba(250, 90, 10, 0.6667);
+    --white-color: white;
+    --black-color: #05141F;
+    /* Define your font family */
+    --primary-font: 'Nunito', sans-serif;
+}
+
+ 
