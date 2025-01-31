@@ -1,0 +1,150 @@
+.contact {
+    width: 100%;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    padding: 6rem 0;
+    margin: 0; 
+    position: relative;
+    z-index: 1;
+}
+
+.contact__circle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.contact .row {
+    margin: 0;
+    padding: 0;
+}
+
+.contact__left, .contact__right {
+    padding: 0;
+    margin: 0;
+}
+
+.contact__left__image {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__right {
+    gap: 2rem;
+}
+
+.contact__right__header__robot {
+    filter: drop-shadow(0 0 60px rgba(255, 255, 255, 0.8));
+}
+
+.contact__right__header__title {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contact__right__input__fullname {
+    border: 2px solid var(--white-color);
+    width: 350px;
+    height: 80px;
+    color: var(--white-color);
+    border-radius: 6.25rem;
+    padding: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.16);
+    font-size: 1.125rem;
+}
+
+.contact__right__input__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.contact__right__input__phone {
+    width: 100%;
+    padding-right: 4rem; 
+}
+
+.contact__right__input__button {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 80%;
+    border: none;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 6.25rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact__right__input__wrapper {
+    width: 450px;
+    height: 80px;
+}
+
+.contact__right__input__phone {
+    border: 2px solid var(--white-color); 
+    height: 100%;
+    color: var(--white-color);
+    border-radius: 6.25rem;
+    padding: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.16);
+    font-size: 1.125rem;
+}
+
+.contact__right__input__fullname::placeholder, .contact__right__input__phone::placeholder {
+    color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .contact__right__header {
+        flex-wrap: wrap;
+    }
+
+    .contact__right__input__fullname, .contact__right__input__wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 1rem 0;
+    }
+
+    .contact__circle {
+        width: 50%;
+        height: 50%;
+    }
+
+    .contact__right__header__robot {
+        width: 30%;
+    }
+
+    .contact__right__header__title {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .contact__right__input__fullname, .contact__right__input__wrapper {
+        height: 40px;
+    }
+
+    .contact__right__input__fullname, .contact__right__input__phone {
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .contact__right__input__button {
+        font-size: 0.8rem;
+    }
+}
