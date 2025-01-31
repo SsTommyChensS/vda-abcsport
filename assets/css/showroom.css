@@ -1,6 +1,15 @@
 .showroom {
     padding: 8rem 6rem 8rem 6rem;
     background-color: var(--secondary-color);
+    position: relative;
+}
+
+.showroom__circle {
+    position: absolute;
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%);
+    opacity: 0.6;
 }
 
 .showroom__right {
@@ -98,6 +107,10 @@
 @media (max-width: 768px) {
     .showroom {
         padding: 4rem 3rem 4rem 3rem;
+    }
+
+    .showroom__circle {
+       opacity: 0.1;
     }
 
     .showroom__right {
