@@ -191,7 +191,7 @@
       </span>
     </div>
     <div class="products__slider">
-      <div class="swiper-container products__items">
+      <div class="swiper-container products__items position-relative">
         <div class="swiper-wrapper">
           <div class="swiper-slide products__items__product">
             <img src="assets/images/products/products_item_1.png" alt="Product 1"/>
@@ -219,6 +219,10 @@
             <p class="products__items__product__quantity">10 Sản Phẩm</p>
           </div>
         </div>
+        <div class="products__items__arrows d-flex justify-content-between">
+          <i class="bi bi-arrow-left"></i>
+          <i class="bi bi-arrow-right"></i>
+        </div>
       </div>
     </div>
     <button class="products__see-all-button d-flex justify-content-center align-items-center">
@@ -241,60 +245,72 @@
     </div>
     <div class="abcsport-chair__slider d-flex align-items-center">
       <img class="abcsport-chair__slider__previous-button" src="assets/images/flashsale/flashsale_previous-button.svg" alt="Previous button"/>
-      <div class="swiper-container abcsport-chair__items flex-grow-1">
+      <div class="swiper-container abcsport-chair__items flex-grow-1 position-relative">
         <div class="swiper-wrapper">
           <div class="swiper-slide abcsport-chair__items__product text-start position-relative">
             <div class="abcsport-chair__items__product__sale-off-label">-24%</div>
             <img src="assets/images/abcsport-chair/abcsport-chair_item_1.png" alt="Product 1"/>
-            <p class="abcsport-chair__items__product__name mt-4">
-              Ghế massage ABCSport A35
-            </p>
-            <p class="abcsport-chair__items__product__original-price mt-1">
-              16.900.000đ
-            </p>
-            <p class="abcsport-chair__items__product__final-price mt-1">
-              12.900.000đ
-            </p>
+            <div class="abcsport-chair__items__product__info d-flex flex-column gap-1 mt-4">
+              <span class="abcsport-chair__items__product__name">
+                Ghế massage ABCSport A35
+              </span>
+              <span class="abcsport-chair__items__product__original-price">
+                16.900.000đ
+              </span>
+              <span class="abcsport-chair__items__product__final-price">
+                12.900.000đ
+              </span>
+            </div>
           </div>
           <div class="swiper-slide abcsport-chair__items__product text-start position-relative">
             <div class="abcsport-chair__items__product__sale-off-label">-24%</div>
             <img src="assets/images/abcsport-chair/abcsport-chair_item_2.png" alt="Product 2"/>
-            <p class="abcsport-chair__items__product__name mt-4">
-              Ghế massage ABCSport A35
-            </p>
-            <p class="abcsport-chair__items__product__original-price mt-1">
-              16.900.000đ
-            </p>
-            <p class="abcsport-chair__items__product__final-price mt-1">
-              12.900.000đ
-            </p>
+            <div class="abcsport-chair__items__product__info d-flex flex-column gap-1 mt-4">
+              <span class="abcsport-chair__items__product__name">
+                Ghế massage ABCSport A35
+              </span>
+              <span class="abcsport-chair__items__product__original-price">
+                16.900.000đ
+              </span>
+              <span class="abcsport-chair__items__product__final-price">
+                12.900.000đ
+              </span>
+            </div>
           </div>
           <div class="swiper-slide abcsport-chair__items__product text-start position-relative">
             <div class="abcsport-chair__items__product__sale-off-label">-24%</div>
             <img src="assets/images/abcsport-chair/abcsport-chair_item_3.png" alt="Product 3"/>
-            <p class="abcsport-chair__items__product__name mt-4">
-              Ghế massage ABCSport A35
-            </p>
-            <p class="abcsport-chair__items__product__original-price mt-1">
-              16.900.000đ
-            </p>
-            <p class="abcsport-chair__items__product__final-price mt-1">
-              12.900.000đ
-            </p>
+            <div class="abcsport-chair__items__product__info d-flex flex-column gap-1 mt-4">
+              <span class="abcsport-chair__items__product__name">
+                Ghế massage ABCSport A35
+              </span>
+              <span class="abcsport-chair__items__product__original-price">
+                16.900.000đ
+              </span>
+              <span class="abcsport-chair__items__product__final-price">
+                12.900.000đ
+              </span>
+            </div>
           </div>
           <div class="swiper-slide abcsport-chair__items__product text-start position-relative">
             <div class="abcsport-chair__items__product__sale-off-label">-24%</div>
             <img src="assets/images/abcsport-chair/abcsport-chair_item_1.png" alt="Product 1"/>
-            <p class="abcsport-chair__items__product__name mt-4">
-              Ghế massage ABCSport A35
-            </p>
-            <p class="abcsport-chair__items__product__original-price mt-1">
-              16.900.000đ
-            </p>
-            <p class="abcsport-chair__items__product__final-price mt-1">
-              12.900.000đ
-            </p>
+            <div class="abcsport-chair__items__product__info d-flex flex-column gap-1 mt-4">
+              <span class="abcsport-chair__items__product__name">
+                Ghế massage ABCSport A35
+              </span>
+              <span class="abcsport-chair__items__product__original-price">
+                16.900.000đ
+              </span>
+              <span class="abcsport-chair__items__product__final-price">
+                12.900.000đ
+              </span>
+            </div>
           </div>
+        </div>
+        <div class="abcsport-chair__items__arrows d-flex justify-content-between">
+          <i class="bi bi-arrow-left"></i>
+          <i class="bi bi-arrow-right"></i>
         </div>
       </div>
       <img class="abcsport-chair__slider__next-button" src="assets/images/flashsale/flashsale_next-button.svg" alt="Next button"/>
@@ -340,6 +356,7 @@
     <div class="testimonials__image">
       <img src="assets/images/testimonials/testimonials_image.png" alt="Testimonial image"/>
     </div>
+    <img class="testimonials__circle" src="assets/images/testimonials/testimonials_circle.svg" alt="Testimonial circle image"/>
   </div>
   <!-- Showroom -->
   <div class="showroom">
@@ -427,7 +444,7 @@
     </div>
     <div class="news__slider d-flex align-items-center">
       <img class="news__slider__previous-button" src="assets/images/news/news_previous-button.svg" alt="Previous button"/>
-      <div class="swiper-container news__items flex-grow-1">
+      <div class="swiper-container news__items flex-grow-1 position-relative">
         <div class="swiper-wrapper">
           <div class="swiper-slide news__items__item text-start">
             <img class="news__items__item_image" src="assets/images/news/news_item_1.png" alt="News 1"/>
@@ -499,6 +516,10 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="news__items__arrows d-flex justify-content-between">
+          <i class="bi bi-arrow-left text-primary"></i>
+          <i class="bi bi-arrow-right text-primary"></i>
         </div>      
       </div>
       <img class="news__slider__next-button" src="assets/images/news/news_next-button.svg" alt="Next button"/>

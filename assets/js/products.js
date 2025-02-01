@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Swiper
     const swiper = new Swiper(".products__items", {
-        spaceBetween: 30,
+        spaceBetween: 20,
         loop: true,
         pagination: false,
         breakpoints: {
@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             768: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 20,
             },
             1024: {
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 10,
             },
         },
     });

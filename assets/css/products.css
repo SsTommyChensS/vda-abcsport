@@ -86,15 +86,33 @@
     z-index: 0;
 }
 
+.products__items__arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    width: 100%; 
+    padding: 0 1rem;
+    pointer-events: none;
+    color: var(--white-color);
+    font-size: 2rem;
+}
 
 @media (max-width: 480px) {
     .products {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .products__slider {
+        width: 90%;
+        margin: auto;
     }
 
     .products__header__title {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
     }
 
     .products__header__prenium {
@@ -102,9 +120,8 @@
     }
 
     .products__see-all-button {
-        margin-top: 2rem;
-        padding: 1rem 2rem;
+        margin-top: 1rem;
+        padding: 0.5rem 2rem;
         font-size: 0.8rem;
-        font-weight: bold;
     }
 }
