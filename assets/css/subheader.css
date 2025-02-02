@@ -31,3 +31,13 @@
 .subheader .navbar-nav .dropdown-menu .dropdown-item {
     color: var(--black-color);
 }
+
+@media (max-width: 480px) {
+    .subheader .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+
+    .subheader__showroom {
+        padding-left: 0;
+    }
+}

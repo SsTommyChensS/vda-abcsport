@@ -73,6 +73,8 @@
     border-radius: 3.75rem;
     gap: 2rem;
     border: none;
+    z-index: 99;
+    position: relative;
 }
 
 .products__see-all-button:hover {
@@ -83,7 +85,6 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 0;
 }
 
 .products__items__arrows {
@@ -98,6 +99,12 @@
     color: var(--white-color);
     font-size: 2rem;
 }
+
+@media (max-width: 1024px) {
+    .products__canvas {
+        opacity: 0.6;
+    }
+} 
 
 @media (max-width: 480px) {
     .products {
@@ -123,5 +130,11 @@
         margin-top: 1rem;
         padding: 0.5rem 2rem;
         font-size: 0.8rem;
+    }
+
+    .products__canvas {
+        width: 80%;
+        height: auto;
+        opacity: 0.3;
     }
 }

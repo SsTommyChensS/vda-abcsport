@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Swiper
     const swiper = new Swiper('.flashsale__items', {
-      spaceBetween: 30,
       loop:true,
       autoplay: {
         delay: 3000,
@@ -22,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 20,
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 30,
+          spaceBetween: 20,
         },
       },
     });
