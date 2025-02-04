@@ -19,39 +19,35 @@
 <body>
   <!-- Header -->
   <nav class="header navbar navbar-expand-sm navbar-light px-4">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <!-- Logo (always visible) -->
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/header/header_logo.svg" alt="ABC Logo" />
-      </a>
-  
-      <!-- Hamburger Button (only visible on mobile) -->
-      <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Collapsible content (Search, Login/Signup, Cart) -->
-      <div class="collapse navbar-collapse w-100" id="navbarContent">
-        <!-- Centered Search Input (takes up most of the space) -->
-        <div class="d-flex justify-content-center flex-grow-1">
-          <form class="d-flex w-75" role="search">
-            <div class="input-group">
-              <input class="form-control" type="search" placeholder="Từ khóa tìm kiếm..." aria-label="Search">
-              <!-- Custom SVG Icon -->
-              <span class="input-group-text">
-                <img src="assets/images/header/header__search__icon.svg" alt="Search" class="search-icon" />
-              </span>
+    <div class="container-fluid d-flex justify-content-between align-items-center gap-2">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/header/header_logo.svg" alt="ABC Logo" />
+        </a>
+        <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarContent">
+            <!-- Centered Search Input  -->
+            <div class="d-flex justify-content-center flex-grow-1">
+                <form class="d-flex w-100 justify-content-center" role="search">
+                  <div class="header__input input-group position-relative">
+                    <input class="form-control" type="search" placeholder="Từ khóa tìm kiếm..." aria-label="Search">
+                    <!-- Custom SVG Icon -->
+                    <span class="input-group-text position-absolute end-0 top-50 translate-middle-y">
+                        <img src="assets/images/header/header__search__icon.svg" alt="Search" class="search-icon" />
+                    </span>
+                  </div>
+                </form>
             </div>
-          </form>
+            <div class="header__action d-flex align-items-center gap-3 ms-auto">
+                <img class="header__action__user" src="assets/images/header/header_user_logo.svg" alt="User logo" />
+                <span class="header__action_lists">
+                  <a class="header__action__lists__signup" href="#">Đăng ký</a> / 
+                  <a class="header__action__lists__login" href="#">Đăng nhập</a>
+                </span>
+                <img class="header__action__cart" src="assets/images/header/header__cart.svg" alt="Cart button" />
+            </div>
         </div>
-  
-        <!-- Login/Sign-up and Cart on the right -->
-        <div class="d-flex align-items-center gap-3 ms-auto">
-          <img class="header__action__user" src="assets/images/header/header_user_logo.svg" alt="User logo" />
-          <span class="header__action_lists">Đăng ký / Đăng nhập</span>
-          <img class="header__action__cart" src="assets/images/header/header__cart.svg" alt="Cart button" />
-        </div>
-      </div>
     </div>
   </nav>
   <!-- Subheader-->
@@ -93,7 +89,31 @@
       </div>
     </div>
   </div> 
-  
+  <!-- Introduction -->
+  <div class="introduction">
+    <div class="row">
+      <div class="introduction__left px-4 col-lg-7 d-flex flex-column justify-content-center gap-2">
+        <div class="introduction__left__header d-flex align-items-center gap-1">
+          <span class="introduction__left__title">
+            From <span class="introduction__left__title--highlight">Stress</span> To <span class="introduction__left__title--highlight">Serenity</span>
+          </span>
+          <div class="introduction__left__robot d-flex flex-column justify-content-center align-items-center">
+            <img class="introduction__left__robot__lightning" src="assets/images/introduction/introduction_robot_lightning.svg" alt="Introduction robot lightning" width="200" height="80"/>
+            <img class="introduction__left__robot__body" src="assets/images/introduction/introduction_robot_body.svg" alt="Introduction robot body" width="200" height="200"/>
+          </div>
+        </div>
+        <button class="introduction__left__button d-flex justify-content-center align-items-center gap-4">
+          <span class="introduction__left__button__title">
+            DISCOVER MORE
+          </span>
+          <img class="introduction__left__button__arrow" src="assets/images/introduction/introduction_arrow-right-icon.svg" alt="Arrow icon"/>
+        </button>
+      </div>
+      <div class="introduction__right col-lg-5">
+        <img class="introduction__right__image" src="assets/images/introduction/introduction_background.png" alt="Introduction image"/>
+      </div>
+    </div>
+  </div>
   <!-- Flashsale -->
   <div class="flashsale px-2 d-flex flex-column align-items-center position-relative">
     <img class="flashsale__canvas" src="assets/images/flashsale/flashsale_canvas_1.svg" alt="Flashsale canvas"/>
