@@ -1,6 +1,6 @@
 # VIETAIDATA Website
 
-This project is a responsive website for VIETAIDATA assignment. The website is built using HTML, CSS, and JavaScript, with the help of Bootstrap and Swiper.js for responsiveness and interactivity.
+This project is a responsive website for VIETAIDATA assignment. The website is built using HTML, CSS, and JavaScript, with the help of Bootstrap and Swiper.js for responsiveness and interactivity
 
 ## Technologies Used
 
