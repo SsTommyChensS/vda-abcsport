@@ -73,18 +73,20 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Khuyến Mãi</a>
+            <a class="nav-link" href="#flashsale">Khuyến Mãi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tin Tức</a>
+            <a class="nav-link" href="#news">Tin Tức</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Liên Hệ</a>
+            <a class="nav-link" href="#contact">Liên Hệ</a>
           </li>
         </ul>
-        <div class="subheader__showroom d-flex align-items-center gap-2">
-          <img class="subheader__showroom__icon" src="assets/images/header/header_showroom_icon.svg" alt="Showroom icon"/>
-          <span class="subheader__showroom__title">120 Showroom toàn quốc</span>
+        <div class="subheader__showroom">
+          <a href="#showroom" class="d-flex align-items-center gap-2">
+            <img class="subheader__showroom__icon" src="assets/images/header/header_showroom_icon.svg" alt="Showroom icon"/>
+            <span class="subheader__showroom__title">120 Showroom toàn quốc</span>
+          </a>
         </div>
       </div>
     </div>
@@ -115,7 +117,7 @@
     </div>
   </div>
   <!-- Flashsale -->
-  <div class="flashsale px-2 d-flex flex-column align-items-center position-relative">
+  <div id="flashsale" class="flashsale px-2 d-flex flex-column align-items-center position-relative">
     <img class="flashsale__canvas" src="assets/images/flashsale/flashsale_canvas_1.svg" alt="Flashsale canvas"/>
     <div class="flashsale__header d-flex align-items-center">
       <div>
@@ -402,7 +404,7 @@
     <img class="testimonials__circle" src="assets/images/testimonials/testimonials_circle.svg" alt="Testimonial circle image"/>
   </div>
   <!-- Showroom -->
-  <div class="showroom">
+  <div id="showroom" class="showroom">
     <div class="row">
       <div class="showroom__left col-lg-6 d-flex flex-column gap-4">
         <img class="showroom__image" src="assets/images/showroom/showroom_item_1.png" alt="Showroom image 1"/>
@@ -479,7 +481,7 @@
     <img class="showroom__circle" src="assets/images/showroom/showroom_circle.svg" alt="Showroom circle"/>
   </div>
   <!-- News -->
-  <div class="news px-4">
+  <div id="news" class="news px-4">
     <div class="news__header m-auto text-center">
       <span class="news__header__title">
         Tin Tức & Sự Kiện
@@ -573,7 +575,7 @@
     </button>
   </div>
   <!-- Contact -->
-  <div class="contact">
+  <div id="contact" class="contact">
     <div class="row">
       <div class="contact__left col-lg-5">
         <img class="contact__left__image" src="assets/images/contact/contact_image_1.svg" alt="Contact image"/>

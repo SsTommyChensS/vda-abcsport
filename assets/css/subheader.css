@@ -28,6 +28,10 @@
     padding-left: 20px; 
 }
 
+.subheader__showroom a {
+    text-decoration: none;
+}
+
 .subheader .navbar-nav .dropdown-menu .dropdown-item {
     color: var(--black-color);
 }
