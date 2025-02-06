@@ -1,12 +1,15 @@
 .introduction {
-    background-color: #F2F2F2;
-    font-family: var(--primary-font);
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../images/introduction/introduction_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 1rem 0;
 }
 
 .introduction .row {
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
 }
 
 .introduction__left, .introduction__right {
@@ -24,7 +27,7 @@
 }
 
 .introduction__left__robot {
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
@@ -51,13 +54,11 @@
     scale: 1.05;
 }
 
-.introduction__right__image {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
-}
-
 @media (max-width: 1024px) {
+    .introduction {
+        min-height: 0;
+    }
+
     .introduction {
         padding: 0;
     }
@@ -95,6 +96,10 @@
 }
 
 @media (max-width: 480px) {
+    .introduction {
+        min-height: 0;
+    }
+
     .introduction__left__title {
         text-align: center;
         font-size: 2.5rem;
@@ -111,7 +116,7 @@
     } 
 
     .introduction__left__button {
-        width: 70%;
+        width: 80%;
         margin: 1rem auto;
         padding: 0.5rem 2rem;
         font-size: 0.8rem;
