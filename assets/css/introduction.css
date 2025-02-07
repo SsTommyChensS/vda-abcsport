@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1rem 0;
+    position: relative;
 }
 
 .introduction .row {
@@ -52,6 +53,15 @@
 
 .introduction__left__button:hover {
     scale: 1.05;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -117,7 +127,7 @@
 
     .introduction__left__button {
         width: 80%;
-        margin: 1rem auto;
+        margin: 2rem auto;
         padding: 0.5rem 2rem;
         font-size: 0.8rem;
     }
