@@ -118,6 +118,21 @@
 @media (max-width: 480px) {
     .introduction {
         min-height: 0;
+        overflow: hidden; 
+    }
+
+    .introduction::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/introduction/introduction_background_small.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(18px);
+        -webkit-filter: blur(18px);
     }
 
     .introduction__left__title {
